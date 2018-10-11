@@ -8,8 +8,9 @@ class SessionsController < ApplicationController
 
     if params[:name] && params[:name].empty?
         session[:name] = params[:name]
+        redirect_to "/"
     else
-      current_user
+      redirect_to 
     end
   end
 
