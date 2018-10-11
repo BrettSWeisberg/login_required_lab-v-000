@@ -11,7 +11,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if session != nil
+    render :show
+    if session[:name] != nil
       session.destroy
     end
   end
