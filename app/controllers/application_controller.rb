@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
 
   def current_user
 
-    #  session[:name] = params[:name]
-    #  user = session[:name]
+      session[:name] = params[:name]
+      user = session[:name]
   end
 
 end
