@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    render :show
+    render 'secrets/show'
     if session[:name] != nil
       session.destroy
     end
