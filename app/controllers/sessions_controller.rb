@@ -5,8 +5,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-  binding.pry
-    if params[:name] == nil ||params[:name].empty?
+
+    if params[:name] || params[:name].empty?
       redirect_to '/sessions/new'
     else
       current_user
