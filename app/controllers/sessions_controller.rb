@@ -11,6 +11,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    if session != nil
+      session.destroy 
+    end
   end
 end
