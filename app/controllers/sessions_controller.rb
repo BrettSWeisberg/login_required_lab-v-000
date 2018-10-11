@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
   def destroy
     if session != nil
-      session.destroy 
+      session.destroy
     end
   end
 end
