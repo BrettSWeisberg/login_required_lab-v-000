@@ -1,10 +1,11 @@
 class SessionsController < ApplicationController
   helper_method :current_user
+  
   def new
   end
 
   def create
-
+    binding.pry
     if current_user == nil ||current_user.empty?
       redirect_to '/sessions/new'
     else
