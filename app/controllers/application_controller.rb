@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def current_user
     binding.pry
       session[:name] = params[:name]
-      user = session[:name]
+    #  user = session[:name]
   end
 
 end
