@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def current_user
-    #  session[:name] = params[:name]
-      user = session[:name]
+  
+    session[:name]
   end
 
 end
